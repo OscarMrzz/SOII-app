@@ -26,12 +26,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={` bg-slate-200 h-screen w-full`}>
-        <header className="">
+      <body className={` bg-slate-200 h-screen  w-full   `}>
+        <header className=" w-full ">
           <HeadersComponent />
         </header>
-        <main className="h-full w-full flex flex-col pt-24 pb-32">
+        <main className="h-full w-full p-4  lg:justify-center lg:items-center  flex flex-col pt-24 pb-32 ">
+          <div className="lg:w-4xl lg:min-w-2xl items-center justify-center ">
+
           {children}
+          </div>
         </main>
         <footer className="">
           <FooterComponet />

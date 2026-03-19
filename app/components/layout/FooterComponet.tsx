@@ -8,7 +8,7 @@ import Link from 'next/link'
 
 export default function FooterComponet() {
   return (
-    <div className='bg-slate-300 h-32 w-full shadow border-2 border-slate-100 flex justify-between items-center px-4 fixed   bottom-0 '>
+    <div className='bg-slate-300 h-32 w-full shadow border-2 border-slate-100 flex lg:hidden justify-between items-center px-4 fixed   bottom-0  '>
   <BotonIrGuardados />
   <Link href={"/"} ><HomeIcon size={48} Styles='text-slate-700'/></Link>
     

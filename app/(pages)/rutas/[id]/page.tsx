@@ -31,12 +31,12 @@ export default function Page({ params }: Props) {
   };
 
   return (
-    <div className="p-4">
-      <h2 className="text-2xl font-black text-slate-600 mb-4">
+    <div className="p-4 w-full ">
+      <h2 className="text-2xl font-black text-slate-600 mb-4 ">
         SPS - El progreso
       </h2>
 
-      <div className="rounded-xl overflow-hidden border border-slate-200 shadow-lg">
+      <div className="rounded-xl overflow-hidden border border-slate-200 shadow-lg w-full">
         {/* 2. Colocación del componente */}
         <MapComponent puntos={puntosPrueba} />
       </div>
