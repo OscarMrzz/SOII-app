@@ -5,11 +5,20 @@ import BotonHome from "@/components//UI/Botones/BotonHome";
 import BotonFavorito from "@/components//UI/Botones/BotonFavorito";
 import UserIcon from "@/Icons/UserIcon";
 import SidebarMovil from "../Sidebar/SidebarMovil";
+import Image from "next/image";
 
 export default function HeaderComponent() {
   return (
-    <div className=" felx w-full h-24 p-4 flex justify-between fixed   top-0 z-50">
-      <h2 className="text-2xl font-black text-slate-700">LOGO</h2>
+    <div className=" felx w-full h-24 p-4 flex justify-between fixed   top-0 z-50 ">
+ <Image 
+  src="/logo/logo2.png" 
+  alt="Logo de la aplicación" 
+  width={100} 
+  height={100} 
+  priority 
+  className="w-auto h-auto" // Fuerza a mantener el aspect ratio si hay estilos externos
+  style={{ width: 'auto', height: 'auto' }} // Refuerzo para eliminar la advertencia de Next.js
+/>
       <div>
         <div className="hidden  lg:flex gap-4">
           
