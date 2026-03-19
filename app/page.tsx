@@ -1,10 +1,94 @@
+import RutaItem from "./components/Rutas/RutaItem";
+import { rutaInterface } from "./Interfaces/rutas.iterface";
+
+
+
+const rutasList: rutaInterface[] = [
+  {
+    idRuta: "1",
+    ruta: "SPS - El Progreso",
+    inicioRuta: "SPS",
+    finRuta: "Progreso",
+    paradasRuta: [],
+    precioRuta: 0,
+    createdAtRuta: new Date(),
+    updatedAtRuta: new Date(),
+    activo: "1",
+    imagenRuta: "",
+  },
+  {
+    idRuta: "2",
+    ruta: "SPS - La lima",
+    inicioRuta: "SPS",
+    finRuta: "La lima",
+    paradasRuta: [],
+    precioRuta: 0,
+    createdAtRuta: new Date(),
+    updatedAtRuta: new Date(),
+    activo: "1",
+    imagenRuta: "",
+  },
+  {
+    idRuta: "3",
+    ruta: "SPS-La pas",
+    inicioRuta: "SPS",
+    finRuta: "La pas",
+    paradasRuta: [],
+    precioRuta: 0,
+    createdAtRuta: new Date(),
+    updatedAtRuta: new Date(),
+    activo: "1",
+    imagenRuta: "",
+  },
+  {
+    idRuta: "4",
+    ruta: "SPS - Tegusigalpa",
+    inicioRuta: "SPS",
+    finRuta: "Tegusigalpa",
+    paradasRuta: [],
+    precioRuta: 0,
+    createdAtRuta: new Date(),
+    updatedAtRuta: new Date(),
+    activo: "1",
+    imagenRuta: "",
+  },
+  {
+    idRuta: "5",
+    ruta: "SPS - Copan Ruinas",
+    inicioRuta: "SPS",
+    finRuta: "Copan Ruinas",
+    paradasRuta: [],
+    precioRuta: 0,
+    createdAtRuta: new Date(),
+    updatedAtRuta: new Date(),
+    activo: "1",
+    imagenRuta: "",
+  },
+  {
+    idRuta: "6",
+    ruta: "SPS - La ceiba",
+    inicioRuta: "SPS",
+    finRuta: "La ceiba",
+    paradasRuta: [],
+    precioRuta: 0,
+    createdAtRuta: new Date(),
+    updatedAtRuta: new Date(),
+    activo: "1",
+    imagenRuta: "",
+  },
+
+
+]
+
+
+
 export default function Home() {
   return (
     <div className="flex flex-col px-4 h-full w-full sm:w-full md:w-3/4 lg:w-1/2 mx-auto">
       <div className="w-full h-full  justify-center items-center flex flex-col gap-4 pt-24">
         <div>
 
-      Proximo Auto bus
+      Proximo Autobus
         </div>
       <div className="text-6xl font-bold">
         12:30 PM
@@ -15,30 +99,12 @@ export default function Home() {
         <h2 className="text-2xl font-bold text-slate-300">Rutas en tu ubicacion</h2>
       </div>
       <div className="flex flex-col w-full h-120 min-h-120 overflow-y-auto gap-2 pb-48 ">
-        <div className=" w-full h-24 min-h-24 bg-white shadow rounded-2xl p-2 font-bold text-slate-700 ">
-          <h2>SPS-Progreso</h2>
-        </div>
-        <div className=" w-full h-24 min-h-24 bg-white shadow rounded-2xl p-2 font-bold text-slate-700 ">
-          <h2>SPS-Progreso</h2>
-        </div>
-        <div className=" w-full h-24 min-h-24 bg-white shadow rounded-2xl p-2 font-bold text-slate-700 ">
-          <h2>SPS-Progreso</h2>
-        </div>
-        <div className=" w-full h-24 min-h-24 bg-white shadow rounded-2xl p-2 font-bold text-slate-700 ">
-          <h2>SPS-Progreso</h2>
-        </div>
-        <div className=" w-full h-24 min-h-24 bg-white shadow rounded-2xl p-2 font-bold text-slate-700 ">
-          <h2>SPS-Progreso</h2>
-        </div>
-        <div className=" w-full h-24 min-h-24 bg-white shadow rounded-2xl p-2 font-bold text-slate-700 ">
-          <h2>SPS-Progreso</h2>
-        </div>
-        <div className=" w-full h-24 min-h-24 bg-white shadow rounded-2xl p-2 font-bold text-slate-700 ">
-          <h2>SPS-Progreso</h2>
-        </div>
-        <div className=" w-full h-24 min-h-24 bg-white shadow rounded-2xl p-2 font-bold text-slate-700 ">
-          <h2>SPS-Progreso</h2>
-        </div>
+        {
+          rutasList.map((ruta) => (
+           <RutaItem key={ruta.idRuta} ruta={ruta}  />
+          ))
+        }
+
        
       </div>
     </div>
