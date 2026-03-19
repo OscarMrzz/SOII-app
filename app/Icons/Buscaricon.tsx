@@ -4,28 +4,26 @@ type Props = {
   Styles?: string;
 };
 
-export default function Buscaricon( { size = 24, Styles }: Props) {
+export default function Buscaricon({ size = 24, Styles }: Props) {
   return (
     <div>
-      <svg
+         <svg
         xmlns="http://www.w3.org/2000/svg"
         width={size}
         height={size}
         viewBox="0 0 24 24"
         fill="none"
         stroke="currentColor"
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        className={`icon icon-tabler icons-tabler-outline icon-tabler-map-search ${Styles}`}
+        strokeWidth="2"
+          strokeLinecap="round"
+        strokeLinejoin="round"
+        className={`icon icon-tabler icons-tabler-outline icon-tabler-search ${Styles}`}
       >
         <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-        <path d="M11 18l-2 -1l-6 3v-13l6 -3l6 3l6 -3v7.5" />
-        <path d="M9 4v13" />
-        <path d="M15 7v5" />
-        <path d="M15 18a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
-        <path d="M20.2 20.2l1.8 1.8" />
+        <path d="M3 10a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+        <path d="M21 21l-6 -6" />
       </svg>
+  
     </div>
   );
 }

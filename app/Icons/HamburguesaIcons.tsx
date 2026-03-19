@@ -1,11 +1,11 @@
 import React from "react";
 
 type Props = {
-    size?: number;
-    Styles?: string;
+  size?: number;
+  Styles?: string;
 };
 
-export default function HamburguesaIcon({size = 24, Styles}: Props) {
+export default function HamburguesaIcon({ size = 24, Styles }: Props) {
   return (
     <div>
       <svg
@@ -15,10 +15,10 @@ export default function HamburguesaIcon({size = 24, Styles}: Props) {
         viewBox="0 0 24 24"
         fill="none"
         stroke="currentColor"
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        className={`icon icon-tabler icons-tabler-outline icon-tabler-menu-2 ${Styles || ''}`}
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        className={`icon icon-tabler icons-tabler-outline icon-tabler-menu-2 ${Styles || ""}`}
       >
         <path stroke="none" d="M0 0h24v24H0z" fill="none" />
         <path d="M4 6l16 0" />
